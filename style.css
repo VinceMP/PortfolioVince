@@ -1,0 +1,729 @@
+/* Corp de la page */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(3, 0, 20);
+}
+
+html{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+
+
+/* ENTETE */
+
+#entete{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    word-spacing: 20px;
+    align-items: center;
+    position: sticky;
+    top: 30px;
+}
+
+#entete #logo img{
+    width: 40px;
+    height: 40%;
+    border-radius: 10px;
+}
+
+#entete a{
+    text-decoration: none;
+    color: rgb(136, 146, 176);
+}
+
+#entete a:hover{
+    text-decoration: underline;
+    color: rgb(92, 234, 203);
+    transition-duration: 0.5s;
+   
+}
+
+button:hover{
+   background-color: rgb(19, 48, 64);
+   transition-duration: 0.5s;
+}
+
+button {
+    color: rgb(100, 255, 218);
+    background-color: rgb(3, 0, 20);
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    font-family: monospace;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1;
+    margin-left: 15px;
+    font-size: var(--fz-xs);
+}
+
+#Menu button a{
+    text-decoration: none;
+    color: rgb(100, 255, 218);
+}
+
+
+
+
+/* INTRODUCTION */
+
+
+
+
+
+
+
+#Intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+   
+}
+
+#intro1{
+    color: rgb(92, 234, 203);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.waviy {
+    position: relative;
+  }
+.waviy span {
+    color: rgb(204, 214, 246);
+    font-size: 70px;
+    font-family: 'DM Serif Display', serif;
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 3s infinite;
+    animation-delay: calc(.1s * var(--i));
+    text-shadow: 0 0 10px #fff, 0 0 20px rgb(92, 234, 203), 0 0 30px rgb(3, 0, 20), 0 0 20px #710486, 0 0 20px #710486, 0 0 20px #710486, 0 0 20px #710486, 0 0 20px #710486;
+}
+
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+}
+
+#intro3{
+    color: rgb(136, 146, 176);
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#intro4{
+    color: rgb(136, 146, 176);
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+#intro4 a{
+    text-decoration: none;
+    color: rgb(92, 234, 203);
+}
+
+#intro4 a:hover{
+    text-decoration: underline;
+}
+
+#boutton-projet{
+    display: flex;
+    align-items: center;   
+}
+
+#boutton-projet button a{
+    text-decoration: none;
+    color: rgb(92, 234, 203);
+}
+
+#apparition{
+    display: none;
+}
+
+#direction{
+    color: rgb(204, 214, 246);
+    font-size: 30px;
+    width: 30%;
+    margin-bottom: 4px ;
+}
+
+#arrow{
+    color: rgb(92, 234, 203);
+    text-align: center;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+/* A propos de moi */
+
+
+
+
+
+
+#about-me{
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    margin-top: 700px;
+    padding: 10%;
+}
+
+#about-me p{
+    color: rgb(3, 0, 20);
+}
+
+#titre-logo{
+    display: flex;
+    align-items: center;
+    color: rgb(3, 0, 20);
+}
+
+#titre-logo img{
+    margin-left: 20px;
+    width: 40px;
+    height: 40%;
+    border-radius: 10px;
+}
+
+#image-moi img{
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 25%;
+    border: 3px solid rgb(3, 0, 20);
+
+}
+
+#text{
+    width: 110%;
+    margin-right: 20%;
+    color: rgb(145, 151, 168);
+    font-size: 20px;
+}
+
+#text h1 span{
+    color: rgb(92, 234, 203);
+}
+
+
+/* Fiche personnage moi */
+
+#caractéristiques{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 700px;
+    border: 1px solid rgb(92, 234, 203);  
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px #fff, 0 0 20px rgb(92, 234, 203), 0 0 30px rgb(3, 0, 20), 0 0 20px #710486, 0 0 20px #710486, 0 0 20px #710486, 0 0 20px #710486, 0 0 20px #710486;
+}
+
+
+#Caracteristiques-1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+#personne{
+    
+    background-image: url('Image/vitre.png');
+    margin-bottom: 40px;
+    border: 1px solid rgb(92, 234, 203);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(255,255,255,0.5) inset;
+}
+
+
+#texte-1{
+    margin-bottom: 15px;
+}
+
+#physique{
+    background-image: url('Image/vitre.png');
+    margin-bottom: 40px;
+    border: 1px solid rgb(92, 234, 203);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(255,255,255,0.5) inset;
+}
+
+
+#texte-2{
+    margin-bottom: 15px;
+}
+
+#diplomes{
+    background-image: url('Image/vitre.png');
+    margin-bottom: 40px;
+    border: 1px solid rgb(92, 234, 203);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(255,255,255,0.5) inset;
+}
+
+#texte-3{
+    margin-bottom: 15px;
+}
+
+#autres{
+    background-image: url('Image/vitre.png');
+    margin-bottom: 40px;
+    border: 1px solid rgb(92, 234, 203);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(255,255,255,0.5) inset;
+    margin-left: 40px;
+}
+
+#caricature{
+    width: 400px;
+    height: 500px;
+    border: 1px solid rgb(92, 234, 203);
+    margin: auto;
+   
+}
+
+#caricature img{
+    height: 100%;
+    width: 100%;
+}
+
+#caracteristiques-2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+#competence-informatique{
+    background-image: url('Image/vitre.png');
+    margin-bottom: 40px;
+    border: 1px solid rgb(92, 234, 203);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(255,255,255,0.5) inset;
+}
+
+#texte-4{
+    margin-bottom: 15px;
+}
+
+#formation{
+    background-image: url('Image/vitre.png');
+    margin-bottom: 40px;
+    height: 140px;
+    border: 1px solid rgb(92, 234, 203);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(255,255,255,0.5) inset;
+}
+
+#texte-5{
+    margin-bottom: 15px;
+}
+
+#xp{
+    background-image: url('Image/vitre.png');
+    border: 1px solid rgb(92, 234, 203);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 10px 2px rgba(255,255,255,0.5) inset;
+}
+
+#autres-2{
+    background-image: url('Image/vitre.png');
+    margin-right: 40px;
+    border: 1px solid rgb(92, 234, 203);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(255,255,255,0.5) inset;
+}
+
+#texte-6{
+    margin-bottom: 15px;
+}
+
+#caricature img{
+    width: 100%;
+    
+}
+
+#caractéristiques h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    font-weight: normal;
+    background-image: linear-gradient(to right, rgb(92, 234, 203) , #710486);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0.1px 0.1px 5px rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+/* Mes projets */
+
+
+
+
+
+
+#titre_mes_projets{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 150px;
+    color: rgb(204, 214, 246);
+}
+
+#all-projets{
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+#projet-1{
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(36, 51, 77);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: solid rgb(92, 234, 203)
+}
+
+#projet-1 img{
+    width: 12%;
+}
+
+#titre-projet-1{
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(204, 214, 246);
+    font-size: 20px;
+}
+
+#text-projet-1{
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(136, 146, 176);
+}
+
+#languages-projet-1{
+    margin-top: 50px;
+    text-align: center;
+    word-spacing: 20px;
+    color: rgb(126, 137, 167);
+    opacity: 50%;
+}
+
+
+#projet-2{
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(36, 51, 77);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: solid rgb(92, 234, 203)
+}
+
+
+#projet-2 img{
+    width: 12%;
+}
+
+#languages-projet-2{
+    margin-top: 67px;
+    text-align: center;
+    word-spacing: 20px;
+    color: rgb(126, 137, 167);
+    opacity: 50%;
+}
+
+#titre-projet-1 a{
+    text-decoration: none;
+    color: rgb(204, 214, 246);
+}
+
+#titre-projet-1 a:hover{
+    color: aliceblue;
+}
+
+#titre_mes_projets span {
+    color: rgb(92, 234, 203);
+}
+
+
+
+@media screen and (max-width: 720px) {
+   
+    #entete{
+        display: flex;
+        flex-direction: column;
+        position: static;
+        font-size: 15px;
+    }
+    
+    #entete a{
+        text-decoration: none;
+        color: rgb(136, 146, 176);
+     
+    }
+
+    #Intro{
+        width: 80%; 
+    }
+    
+    
+
+    .waviy span {
+        font-size: 30px;
+    }
+    
+    #intro3{
+        font-size: 25px;  
+    }
+    
+    #intro4{ 
+        font-size: 20px; 
+    }
+
+   #disparition{
+        display: none;
+    }
+
+    
+    #direction #apparition{
+        display: block;
+    }
+
+
+    #direction{
+        width: 30%;
+    }
+
+
+    #about-me{
+        font-size: 15px;
+        flex-direction: column;
+        margin-top: 350px;
+    }
+    
+    #titre-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(3, 0, 20);
+       
+    }
+
+    #titre-logo h1{
+        font-size: 19px;
+    }
+    
+    #titre-logo img{
+        width: 20px;
+        height: 20%;
+        margin-left: 20px;
+    }
+
+    #image-moi{
+        display: flex;
+        justify-content: center;
+    }
+    #image-moi img{
+        width: 30%; 
+        margin-left: 0;
+    }
+    
+    #text{
+        width: 110%;
+        color: rgb(145, 151, 168);
+        font-size: 20px;
+        margin-right: 0;
+    }
+    
+    #text h1 span{
+        color: rgb(92, 234, 203);
+    }
+   
+    #caractéristiques{
+        width: 95%;
+    }
+
+    #Caractéristiques-1{
+        padding: 10px;
+    }
+
+    #caractéristiques-2{
+        padding: 10px;
+    }
+
+    #caractéristiques li{
+        font-size: 12px;
+    }
+
+
+    #caractéristiques h1{
+        font-size: 15px;
+    }
+
+    #caricature{
+        width: 300px;
+        height: 400px;
+    }
+
+ }
+
+ @media screen and (max-width: 480px) {
+
+    #boutton-projet{
+        display: flex;
+        align-items: center;   
+      
+    }
+    
+    #direction{
+        color: rgb(204, 214, 246);
+        font-size: 15px;
+        margin-bottom: 4px ;
+        text-align: center;
+        width: 40%;
+    }
+
+    #text{
+       
+        margin-right: 10%;
+        color: rgb(145, 151, 168);
+        font-size: 12px;
+    }
+    #intro1{
+        font-size: 13px;
+    }
+
+    .waviy span{
+        font-size: 20px;
+    }
+
+    #intro4{
+        font-size: 17px;
+    }
+
+    #about-me{
+        margin-top: 250px;
+    }
+
+    #caractéristiques{
+        width: 95%;
+    }
+
+    #caractéristiques li{
+        font-size: 9px;
+    }
+
+
+    #caractéristiques h1{
+        font-size: 8px;
+    }
+
+    #Caracteristiques-1{
+        margin-right: 5px;
+    }
+
+    #caracteristiques-2{
+        margin-left: 5px;
+    }
+
+    #caricature{
+        width: 200px;
+        height: 200px;
+    }
+
+    #personne{
+        margin-bottom: 15px;
+    }
+
+    #physique{
+        margin-bottom: 15px;
+    }
+
+    #formation{
+        height: 77px;
+        margin-bottom: 15px;
+    }
+
+    #competence-informatique{
+        margin-bottom: 15px;
+    }
+ }
+
+ @media screen and (max-width: 445px) {
+    #entete{
+        margin: 15px;
+        font-size: 10px;
+    }
+
+    #languages-projet-1{
+        font-size: 10px;
+    }
+
+    #languages-projet-2{
+        font-size: 10px;
+        margin-top: 80px;
+    }
+    #text-projet-1{
+        font-size: 12px;
+    }
+
+    #entete #logo img{
+        height: 60%;
+    }
+
+    #titre-projet-1{
+        font-size: 15px;
+    }
+
+    #projet-1{
+        height: 230px;
+    }
+
+    #projet-2{
+        height: 230px;
+    }
+ }
+
+ @media screen and (max-width: 378px) {
+    .waviy span{
+        font-size: 16px;
+    }
+ }

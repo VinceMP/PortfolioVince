@@ -1,0 +1,100 @@
+
+body {
+    background-image : url(image/image_cv.jpg);
+}
+
+h3 {
+    color: rgb(32, 63, 53);
+    text-decoration:underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*bloc 1*/
+
+#presentation {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+h1 {
+    color: rgb(80, 79, 90);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#titre {
+    font-size: 35px;
+}
+
+.ma_tete {
+    width: 210px;
+    border-radius: 10px;
+}
+
+
+
+/*bloc 2*/
+
+#sujet {
+    flex-wrap: wrap;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+#moi{
+    text-align: center;
+    width: 600px ;
+}
+
+/*bloc 3*/
+#compétences{
+    flex-wrap: wrap;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+#forme {
+    margin-right: 100px;
+}
+
+/*bloc 4*/
+
+#tous{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    align-items: center;
+}
+
+#info {
+    font-size: 20px;
+}
+
+#java{
+    font-size: 28px;
+}
+
+.email {
+    text-decoration: underline;
+    color: grey;
+}
+
+.email:hover{
+    color: rgb(31, 31, 196);
+}
+
+#deco{
+    text-decoration: none;
+    color: black;
+}
+
+#deco:hover{
+    color: rgb(201, 133, 133);
+    text-decoration:underline ;
+}

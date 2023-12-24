@@ -67,14 +67,7 @@ button {
     color: rgb(100, 255, 218);
 }
 
-
-
-
 /* INTRODUCTION */
-
-
-
-
 
 
 
@@ -139,44 +132,7 @@ button {
     text-decoration: underline;
 }
 
-#boutton-projet{
-    display: flex;
-    align-items: center;   
-}
-
-#boutton-projet button a{
-    text-decoration: none;
-    color: rgb(92, 234, 203);
-}
-
-#apparition{
-    display: none;
-}
-
-#direction{
-    color: rgb(204, 214, 246);
-    font-size: 30px;
-    width: 30%;
-    margin-bottom: 4px ;
-}
-
-#arrow{
-    color: rgb(92, 234, 203);
-    text-align: center;
-    font-size: 20px;
-
-}
-
-
-
-
-
-
 /* A propos de moi */
-
-
-
-
 
 
 #about-me{
@@ -223,6 +179,13 @@ button {
     color: rgb(92, 234, 203);
 }
 
+
+
+.competences{
+    display: flex;
+    justify-content: space-around;
+    color: rgb(92, 234, 203);
+}
 
 /* Fiche personnage moi */
 
@@ -374,24 +337,8 @@ button {
     
 }
 
-#caractéristiques h1{
-    font-family: 'Roboto Slab', serif;
-    font-size: 25px;
-    font-weight: normal;
-    background-image: linear-gradient(to right, rgb(92, 234, 203) , #710486);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0.1px 0.1px 5px rgba(255, 255, 255, 0.2);
-}
-
-
-
 
 /* Mes projets */
-
-
-
-
 
 
 #titre_mes_projets{
@@ -401,42 +348,51 @@ button {
     color: rgb(204, 214, 246);
 }
 
-#all-projets{
+#all-projets {
     display: flex;
     margin-top: 80px;
     justify-content: center;
 }
 
-#projet-1{
-    padding: 20px;
-    margin: 20px;
-    width: 250px;
-    height: 250px;
+#projet-1 {
     background-color: rgb(36, 51, 77);
     display: flex;
-    flex-direction: column;
     border-radius: 5px;
-    border: solid rgb(92, 234, 203)
+    border: solid rgb(92, 234, 203);
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
-#projet-1 img{
-    width: 12%;
+.image_projet img {
+ width: 450px;
+ border-radius: 5px;
+ margin-right: 10px;
+ 
 }
 
-#titre-projet-1{
+.text-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 90%;
+    margin-left: 10px;
+}
+
+#titre-projet-1 {
     margin-top: 30px;
     text-align: center;
     color: rgb(204, 214, 246);
-    font-size: 20px;
+    font-size: 40px;
 }
 
-#text-projet-1{
+#text-projet-1 {
     margin-top: 30px;
     text-align: center;
     color: rgb(136, 146, 176);
+    max-width: 300px;
 }
 
-#languages-projet-1{
+#languages-projet-1 {
     margin-top: 50px;
     text-align: center;
     word-spacing: 20px;
@@ -444,12 +400,11 @@ button {
     opacity: 50%;
 }
 
-
 #projet-2{
     padding: 20px;
     margin: 20px;
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 280px;
     background-color: rgb(36, 51, 77);
     display: flex;
     flex-direction: column;

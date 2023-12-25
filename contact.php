@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="style.css">
     <title>Contact</title>
+    
 </head>
 <body>
 
@@ -28,7 +29,7 @@
 </div>
   <div class="container">
     <form method="post">
-      <p>Contacter-moi</p>
+      <p>Contactez-moi</p>
       <input type="text" name="name" placeholder="Nom" required>
       <input type="email" name="email" placeholder="Email" required>
       
@@ -41,12 +42,31 @@
    
   </div>
 
-  <p id="construction">La page est en cour de construction </p>
 
 <?php
 
+include 'controleur/database.php';
+global $db;
+$messageEnvoie = 'Le formulaire a bien était envoyé'; // Variable pour stocker le message
 
-if (isset($_POST['submit'])){
+if (isset($_POST['submit'])) {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+
+  try {
+      $stmt = $db->prepare("INSERT INTO users (nom, email, message) VALUES (:name, :email, :message)");
+      
+      $stmt->bindParam(':name', $name);
+      $stmt->bindParam(':email', $email);
+      $stmt->bindParam(':message', $message);
+      
+      $stmt->execute();
+
+      echo '<h2>' . $messageEnvoie . '<h2>';
+  } catch (PDOException $e) {
+      echo "Erreur lors de l'insertion des données: " . $e->getMessage();
+  }
 
 }
 

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact.php">
     <title>Contact</title>
 </head>
 <body>
@@ -28,11 +27,11 @@
 
 </div>
   <div class="container">
-    <form action="contact.php" method="POST">
+    <form method="post">
       <p>Contacter-moi</p>
-      <input type="text" name="prenom" placeholder="Prénom" required>
-      <input type="email" name="email" placeholder="Email" required>
       <input type="text" name="name" placeholder="Nom" required>
+      <input type="email" name="email" placeholder="Email" required>
+      
       <br>
       
       <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea> <br>
@@ -46,6 +45,10 @@
 
 <?php
 
+
+if (isset($_POST['submit'])){
+
+}
 
 ?>
 </body>

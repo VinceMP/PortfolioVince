@@ -29,10 +29,12 @@
 </div>
   <div class="container">
     <form action="contact.php" method="POST">
-      <p>Contactez-moi</p>
-      <input type="text" name="name" placeholder="Nom" required>
+      <p>Contacter-moi</p>
+      <input type="text" name="prenom" placeholder="Prénom" required>
       <input type="email" name="email" placeholder="Email" required>
-      <input type="tel" name="phone" placeholder="Téléphone" required> <br>
+      <input type="text" name="name" placeholder="Nom" required>
+      <br>
+      
       <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea> <br>
       <input type="submit" name="submit" value="Envoyer">
     </form>
@@ -42,6 +44,10 @@
 
   <p id="construction">La page est en cour de construction </p>
 
+<?php
+
+
+?>
 </body>
 </html>
 

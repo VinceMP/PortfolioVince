@@ -67,14 +67,7 @@ button {
     color: rgb(100, 255, 218);
 }
 
-
-
-
 /* INTRODUCTION */
-
-
-
-
 
 
 
@@ -139,51 +132,16 @@ button {
     text-decoration: underline;
 }
 
-#boutton-projet{
-    display: flex;
-    align-items: center;   
-}
-
-#boutton-projet button a{
-    text-decoration: none;
-    color: rgb(92, 234, 203);
-}
-
-#apparition{
-    display: none;
-}
-
-#direction{
-    color: rgb(204, 214, 246);
-    font-size: 30px;
-    width: 30%;
-    margin-bottom: 4px ;
-}
-
-#arrow{
-    color: rgb(92, 234, 203);
-    text-align: center;
-    font-size: 20px;
-
-}
-
-
-
-
-
-
 /* A propos de moi */
 
-
-
-
-
-
-#about-me{
+#background_about-me{
     background-color: rgb(245, 245, 245);
+
+}
+#about-me{
     display: flex;
     align-items: center;
-    margin-top: 700px;
+    margin-top: 400px;
     padding: 10%;
 }
 
@@ -196,6 +154,8 @@ button {
     align-items: center;
     color: rgb(3, 0, 20);
 }
+
+
 
 #titre-logo img{
     margin-left: 20px;
@@ -224,6 +184,162 @@ button {
 }
 
 
+/* Skills */
+#skills{
+    background-color: rgb(245, 245, 245);
+    height: 80vh;
+    margin-top: 180px;
+}
+
+.all_skills {
+    display: flex;
+    justify-content: center;
+}
+
+.skill_front{
+    display: flex;
+    border: 2px solid #9da2ad;
+    padding: 4em;
+    border-radius: 20px;
+    position: relative;
+}
+
+.skill_front::before{
+    content: "Mes Compétences Front";
+    position: relative;
+    top: -80px;
+    left: 0;
+    padding: 5px 10px;
+    background-color: rgb(245, 245, 245);
+    color: #9da2ad;
+}
+
+
+
+.skill_back{
+    display: flex;
+    border: 2px solid #9da2ad;
+    padding: 4em;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.skill_back::before{
+    content: "Mes Compétences Back-End";
+    position: relative;
+    top: -80px;
+    left: 0;
+    padding: 5px 10px;
+    background-color: rgb(245, 245, 245);
+    color: #9da2ad;
+}
+
+
+
+
+#skills h1{
+    color: rgb(3, 0, 20);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+#skills span{
+    color: rgb(92, 234, 203);
+    width: 120px;
+    
+}
+
+#skills .name span{
+    color: rgb(3, 0, 20);
+    margin: 15px 0;
+    box-shadow:  3.9px 3.9px 13px #BDBFC2,-3.9px -3.9px 13px #FFFFFF;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#skills .name span:hover{
+    margin: 15px 0;
+    box-shadow: 3.9px 3.9px 13px #BDBFC2,  -3.9px -3.9px 13px #FFFFFF,
+    inset 3.9px 3.9px 13px #BDBFC2, 
+    inset -3.9px -3.9px 13px #FFFFFF;
+}
+ 
+
+#skills .name{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    font-weight: 500;
+    width: 8%;
+    margin-right: 80px;
+}
+
+.bar{
+    width: 400px;
+    height: 25px;
+    border-radius: 20px;
+    box-shadow:  inset 6px 6px 8px #BDBFC2,
+        inset -6px -6px 8px #FFFFFF;
+}
+
+.bar_2{
+    width: 400px;
+    height: 25px;
+    border-radius: 20px;
+    box-shadow:  inset 6px 6px 8px #BDBFC2,
+        inset -6px -6px 8px #FFFFFF;
+}
+
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bar .progress {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(92, 234, 203), rgb(115, 172, 97));
+    border-radius: 20px;
+}
+
+.bar:nth-child(1) .progress {
+    width: 80%;
+}
+
+.bar:nth-child(2) .progress {
+    width: 50%;
+}
+
+.bar:nth-child(3) .progress {
+    width: 35%;
+}
+
+
+.bar_2 .progress_2 {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(92, 234, 203), rgb(115, 172, 97));
+    border-radius: 20px;
+}
+
+.bar_2:nth-child(1) .progress_2 {
+    width: 30%;
+}
+
+.bar_2:nth-child(2) .progress_2 {
+    width: 40%;
+}
+
+.bar_2:nth-child(3) .progress_2 {
+    width: 65%;
+}
+
 /* Fiche personnage moi */
 
 #caractéristiques{
@@ -237,7 +353,6 @@ button {
     margin-right: auto;
     box-shadow: 0 0 10px #fff, 0 0 20px rgb(92, 234, 203), 0 0 30px rgb(3, 0, 20), 0 0 20px #710486, 0 0 20px #710486, 0 0 20px #710486, 0 0 20px #710486, 0 0 20px #710486;
 }
-
 
 #Caracteristiques-1{
     display: flex;
@@ -374,24 +489,135 @@ button {
     
 }
 
-#caractéristiques h1{
-    font-family: 'Roboto Slab', serif;
-    font-size: 25px;
-    font-weight: normal;
-    background-image: linear-gradient(to right, rgb(92, 234, 203) , #710486);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0.1px 0.1px 5px rgba(255, 255, 255, 0.2);
+/* Parcour Scolaire */
+
+#titre_parcour {
+    text-align: center;
+}
+
+#parcours{
+    color: rgb(204, 214, 246);
+    margin-top: 150px 
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat";
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: rgb(3, 0, 20); 
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline span {
+    color: rgb(92, 234, 203);
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #1e1f22;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
 }
 
 
 
 
 /* Mes projets */
-
-
-
-
 
 
 #titre_mes_projets{
@@ -401,42 +627,51 @@ button {
     color: rgb(204, 214, 246);
 }
 
-#all-projets{
+#all-projets {
     display: flex;
     margin-top: 80px;
     justify-content: center;
 }
 
-#projet-1{
-    padding: 20px;
-    margin: 20px;
-    width: 250px;
-    height: 250px;
+#projet-1 {
     background-color: rgb(36, 51, 77);
     display: flex;
-    flex-direction: column;
     border-radius: 5px;
-    border: solid rgb(92, 234, 203)
+    border: solid rgb(92, 234, 203);
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
-#projet-1 img{
-    width: 12%;
+.image_projet img {
+ width: 450px;
+ border-radius: 5px;
+ margin-right: 10px;
+ 
 }
 
-#titre-projet-1{
+.text-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 90%;
+    margin-left: 10px;
+}
+
+#titre-projet-1 {
     margin-top: 30px;
     text-align: center;
     color: rgb(204, 214, 246);
-    font-size: 20px;
+    font-size: 40px;
 }
 
-#text-projet-1{
+#text-projet-1 {
     margin-top: 30px;
     text-align: center;
     color: rgb(136, 146, 176);
+    max-width: 300px;
 }
 
-#languages-projet-1{
+#languages-projet-1 {
     margin-top: 50px;
     text-align: center;
     word-spacing: 20px;
@@ -444,12 +679,11 @@ button {
     opacity: 50%;
 }
 
-
 #projet-2{
     padding: 20px;
     margin: 20px;
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 280px;
     background-color: rgb(36, 51, 77);
     display: flex;
     flex-direction: column;

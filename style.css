@@ -205,7 +205,7 @@ button {
 }
 
 .skill_front::before{
-    content: "Mes Compétences Front";
+    content: "Mes Compétences Front-end";
     position: relative;
     top: -80px;
     left: 0;

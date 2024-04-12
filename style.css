@@ -16,7 +16,7 @@ html{
 
 #entete{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin: 30px;
     word-spacing: 20px;
     align-items: center;
@@ -28,6 +28,12 @@ html{
     width: 40px;
     height: 40%;
     border-radius: 10px;
+}
+
+#entete #logo{
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 #entete a{
@@ -184,6 +190,20 @@ button {
 }
 
 
+
+@media screen and (max-width: 520px) {
+
+    #about-me p {
+       
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+
+}
+
+
 /* Skills */
 #skills{
     background-color: rgb(245, 245, 245);
@@ -222,7 +242,6 @@ button {
     padding: 4em;
     border-radius: 20px;
     position: relative;
-    margin-left: 10px;
 }
 
 .skill_back::before{
@@ -340,6 +359,49 @@ button {
     width: 30%;
 }
 
+@media screen and (max-width: 520px) {
+
+.all_skills {
+    flex-direction: column;
+    font-size: 10px;
+    margin: 12px;
+
+
+}
+
+.bar_2 {
+    width: 100px;
+    margin-left: 20px;
+}
+
+.bar {
+    width: 100px;
+    margin-left: 20px;
+}
+
+.skill_front::before{
+    display:none;
+}
+
+.skill_back::before{
+    display:none;
+}
+
+#skills span {
+    width: 90px;
+}
+
+#skills{
+    background-color: rgb(245, 245, 245);
+    height: 90vh;
+    margin-top: 180px;
+}
+
+.skill_back {
+    margin-top: 12px;
+}
+
+}
 /* Fiche personnage moi */
 
 #caractéristiques{
@@ -734,6 +796,19 @@ html {
      
     }
 
+    #entete #logo{
+        position: relative;
+    }
+
+    #Menu{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #logo img{
+        margin-left: 10px;
+    }
+
     #Intro{
         width: 80%; 
     }
@@ -788,7 +863,6 @@ html {
     #titre-logo img{
         width: 20px;
         height: 20%;
-        margin-left: 20px;
     }
 
     #image-moi{
@@ -954,6 +1028,8 @@ html {
     #projet-2{
         height: 230px;
     }
+
+    
  }
 
  @media screen and (max-width: 378px) {
@@ -961,3 +1037,4 @@ html {
         font-size: 16px;
     }
  }
+

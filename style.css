@@ -783,6 +783,17 @@ html {
 
 @media screen and (max-width: 720px) {
    
+    .image_projet img {
+        width: 300px;
+    }
+
+    #projet-1{
+        padding: 15px;
+    }
+
+    #titre-projet-1{
+        font-size: 25px;
+    }
     #entete{
         display: flex;
         flex-direction: column;
@@ -1021,15 +1032,13 @@ html {
         font-size: 15px;
     }
 
-    #projet-1{
-        height: 230px;
+    #projet-1 {
+        flex-direction: column;
     }
 
-    #projet-2{
-        height: 230px;
+    .image_projet img {
+        width: 200px;
     }
-
-    
  }
 
  @media screen and (max-width: 378px) {

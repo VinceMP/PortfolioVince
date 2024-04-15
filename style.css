@@ -14,6 +14,10 @@ html{
 
 /* ENTETE */
 
+#bod{
+    height: 75vh;
+}
+
 #entete{
     display: flex;
     justify-content: flex-end;
@@ -84,7 +88,7 @@ button {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 200px;
+    margin-top: 350px;
    
 }
 
@@ -147,7 +151,7 @@ button {
 #about-me{
     display: flex;
     align-items: center;
-    margin-top: 400px;
+    margin-top: 600px;
     padding: 10%;
 }
 
@@ -189,7 +193,52 @@ button {
     color: rgb(92, 234, 203);
 }
 
+/* Footer */
 
+#footer{
+    display: flex;
+    background-color: black;
+    border-radius: 10px;
+    color: rgb(145, 151, 168);
+    margin-top: 80px;
+    height: auto;
+    justify-content: space-evenly;
+    
+}
+
+#footer a{
+    text-decoration: none;
+    color: rgb(136, 146, 176);
+    
+}
+
+#footer li{
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+    
+
+#footer a:hover{
+    text-decoration: underline;
+    color: rgb(92, 234, 203);
+    transition-duration: 0.5s;
+}
+
+#footer h2{
+    color: rgb(92, 234, 203);
+    margin-top: 75px;
+    margin-bottom: 15px;
+}
+
+#footer img{
+    width: 30px;
+    border-radius: 10px;
+    margin-top: 75px;
+}
+
+.copi h2{
+    margin-top: 0;
+}
 
 @media screen and (max-width: 520px) {
 
@@ -208,7 +257,6 @@ button {
 #skills{
     background-color: rgb(245, 245, 245);
     height: 80vh;
-    margin-top: 180px;
 }
 
 .all_skills {
@@ -260,7 +308,6 @@ button {
 #skills h1{
     color: rgb(3, 0, 20);
     text-align: center;
-    margin-top: 0;
     margin-bottom: 80px;
 }
 
@@ -681,12 +728,24 @@ html {
 
 
 /* Mes projets */
-
+#projects{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    
+}
 
 #titre_mes_projets{
     text-align: center;
     font-size: 30px;
-    margin-top: 150px;
+    margin-top: 10vh;
+    color: rgb(204, 214, 246);
+}
+
+#titre_mes_projets2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10vh;
     color: rgb(204, 214, 246);
 }
 
@@ -784,8 +843,37 @@ html {
 
 @media screen and (max-width: 720px) {
    
+    #projects{
+        flex-direction: column;
+    }
+
+    #footer{
+        flex-direction: column;
+    }
+
+    #footer h2{
+        text-align: center;
+    }
+
+    #footer li{
+        text-align: center;
+    }
+
+    #footer img{
+        text-align: center;
+    }
+
+    #footer h3{
+        text-align: center;
+    }
+    
     .image_projet img {
         width: 300px;
+    }
+
+    .oskourr{
+        display: flex;
+        justify-content: center;
     }
 
     #projet-1{

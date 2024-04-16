@@ -328,6 +328,16 @@ button {
     cursor: pointer;
 }
 
+#skills .name a{
+    text-decoration: none;
+    color: black;
+}
+
+#skills .name a:hover{
+    color: rgb(92, 234, 203);
+    transition-duration: 0.5s;
+}
+
 #skills .name span:hover{
     margin: 15px 0;
     box-shadow: 3.9px 3.9px 13px #BDBFC2,  -3.9px -3.9px 13px #FFFFFF,
@@ -636,6 +646,15 @@ html {
   position: relative;
 }
 
+.timeline span a{
+    text-decoration: none;
+    color: rgb(92, 234, 203);
+}
+
+.timeline span a:hover{
+    text-decoration: underline;
+}
+
 .timeline span {
     color: rgb(92, 234, 203);
 }
@@ -911,6 +930,7 @@ html {
 
     #Intro{
         width: 80%; 
+        margin-top: 120px;
     }
     
     
@@ -1011,6 +1031,14 @@ html {
         height: 400px;
     }
 
+ }
+
+
+ @media screen and (max-width: 670px) {
+    #skills{
+        margin-bottom: 180px;
+        height: 120vh;
+    }
  }
 
  @media screen and (max-width: 480px) {

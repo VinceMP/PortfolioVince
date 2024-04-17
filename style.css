@@ -389,11 +389,11 @@ button {
 }
 
 .bar:nth-child(2) .progress {
-    width: 50%;
+    width: 60%;
 }
 
 .bar:nth-child(3) .progress {
-    width: 35%;
+    width: 30%;
 }
 
 
@@ -405,7 +405,7 @@ button {
 }
 
 .bar_2:nth-child(1) .progress_2 {
-    width: 30%;
+    width: 50%;
 }
 
 .bar_2:nth-child(2) .progress_2 {
@@ -413,7 +413,7 @@ button {
 }
 
 .bar_2:nth-child(3) .progress_2 {
-    width: 30%;
+    width: 25%;
 }
 
 @media screen and (max-width: 520px) {
